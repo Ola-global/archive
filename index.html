@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCHIVE. - A Nigerian Music Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">ARCHIVE<span>.</span></a>
+      <div class="nav-links">
+        <a href="#collection" class="nav-item">Collection</a>
+        <a href="#about" class="nav-item">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="img/vinyl.png" alt="" class="hero-vinyl-img" aria-hidden="true">
+    <div class="hero-content">
+      <div class="eyebrow-pill">
+        <span class="flag-stripes"></span>
+        <span>A Nigerian Music Archive</span>
+      </div>
+      <h1>Nigeria’s sound, told one album at a time.</h1>
+      <p class="hero-sub">Ten selected records. Nearly fifty years of sound, storytelling, and visual expression.</p>
+      <a href="#collection" class="btn btn-primary">Explore the collection</a>
+    </div>
+  </header>
+
+  <div class="reel-stage">
+    <div class="reel-wrapper">
+      <div class="reel-track" id="reelTrack"></div>
+    </div>
+  </div>
+
+  <section id="collection" class="section">
+    <div class="section-header">
+      <span class="section-tag">COLLECTION</span>
+      <h2>Find a familiar record.<br>Discover an unfamiliar story.</h2>
+    </div>
+
+    <div class="filters-glass" id="filterBar"></div>
+
+    <div class="collection-grid" id="albumGrid"></div>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="glass-card about-card">
+      <div class="about-grid">
+        <div>
+          <span class="section-tag">ABOUT ARCHIVE</span>
+          <h2>Creative history deserves to be remembered.</h2>
+        </div>
+        <div class="about-copy">
+          <p>ARCHIVE is a digital museum exploring Nigeria's musical history through album artwork and the stories behind the
+            sound. It invites you to revisit familiar favourites and discover voices you might have missed.</p>
+          <div class="creator-badge-container">
+            <div class="creator-badge">
+              <span class="status-indicator"></span>
+              <span>Created by Olaglobal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-wrap">
+      <p>Album artwork belongs to its respective rights holders.</p>
+      <a href="#" class="back-to-top">Back to top</a>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="glass-panel modal-panel">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close dialog">×</button>
+      <div class="modal-layout">
+        <div class="modal-artwork">
+          <img id="mCover" src="" alt="Album Cover">
+        </div>
+        <div class="modal-info">
+          <div class="modal-tags">
+            <span id="mYear" class="info-pill"></span>
+          </div>
+          <h3 id="mTitle"></h3>
+          <p id="mArtist" class="modal-artist"></p>
+          <hr class="modal-divider">
+          <h4>The Story</h4>
+          <p id="mStory" class="modal-body"></p>
+
+          <div class="modal-footer-actions">
+            <a id="mListen" class="listen-link" target="_blank" rel="noopener noreferrer">Listen to the album</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
